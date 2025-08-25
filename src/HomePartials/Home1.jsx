@@ -4,14 +4,14 @@ import Copy from "../Components/Copy";
 import AnimatedText from "../Components/AnimatedText";
 const Home1 = () => {
   return (
-    <div className="min-h-screen w-full bg-lime-400 px-5 flex flex-col gap-6 lg:gap-4 items-center overflow-hidden">
-      <div className="relative mt-6">
-        <div className=" flex absolute top-6 gap-2 left-1/2 -translate-x-1/2 sm:left-0 sm:-translate-x-0">
+    <div className="h-screen md:h-[130vw] lg:h-[111vh] w-full bg-lime-400 px-5 flex flex-col gap-8 md:gap-10 lg:gap-6 items-center overflow-hidden">
+      <div className="relative mt-0 sm:mt-3 md:mt-6 ">
+        {/* <div className=" flex absolute top-6 gap-2 left-1/2 -translate-x-1/2 sm:left-0 sm:-translate-x-0">
           <div className="h-5 w-5 bg-black rounded-full"></div>
           <div className="h-5 w-5 bg-black rounded-full"></div>
-        </div>
-        <div className="overflow-hidden text-center font-medium mt-2 sm:mt-0  ">
-          <h1 className="text-[24.5vw] sm:!text-[16.5vw] mt-10 md:mt-4 lg:mt-0 !leading-[0.9] ">
+        </div> */}
+        <div className="overflow-hidden text-center font-medium sm:mt-0  ">
+          <h1 className="text-[24.5vw] sm:!text-[16vw] lg:!text-[16.5vw] mt-10 md:mt-4 lg:mt-0 !leading-[0.9] ">
             FRONTEND DEVELOPER
           </h1>
         </div>
@@ -29,14 +29,14 @@ const Home1 = () => {
         {/* Responsive divider line */}
         <div className='hidden sm:flex flex-1 h-[1px] bg-black/20 max-w-[40vw] lg:max-w-[50vw]'></div>
       </div>
-      <div className="relative">
+      <div className=" h-full ">
         <div
-          className="lg:h-132 lg:w-98 max-w-xs sm:max-w-lg lg:max-w-100
- overflow-hidden"
+          className="lg:h-full relative lg:w-98 max-w-xs sm:max-w-lg lg:max-w-100
+"
         >
           <div className="absolute -inset-2 border border-black/30"></div>
           <img
-            className="h-full w-full relative scale-[1.2] "
+            className="h-full w-full relative !object-cover  "
             src="./bb4.JPG"
           ></img>
           <div

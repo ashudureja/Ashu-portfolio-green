@@ -55,7 +55,7 @@ const Home23 = () => {
       </div>
     </div>
     <div className='block lg:hidden w-full p-4'>
-      <div className='text-center  p-5 text-white/70 text-[10.5vw] font-[font2] leading-[1.2]'>A CREATIVE MIND KNOWS HOW TO DO RIGHT THING AT THE RIGHT PLACE AND A THE RIGHT TIME</div>
+      <div className='text-center  p-5 text-white/70 text-[10.5vw] md:text-[8.5vw] font-[font2] leading-[1.2]'>A CREATIVE MIND KNOWS HOW TO DO RIGHT THING AT THE RIGHT PLACE AND A THE RIGHT TIME</div>
       
     </div>
    </div>

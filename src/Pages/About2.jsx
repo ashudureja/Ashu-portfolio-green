@@ -91,23 +91,29 @@ const About2 = () => {
       {" "}
       <div ref={container} className=" bg-[#020617]">
         {/* heading */}
-        <section className="w-screen    h-[17vh]  sm:h-[30vh] md:h-[40vh] lg:h-[45vh] flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
+        <section className="w-screen   flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
           <div className="overflow-hidden w-full h-full">
             {" "}
             <h1
               
-              className="text-[24vw]  sm:!text-[22vw] mt-6  md:mt-4 lg:mt-0 leading-none "
+              className="text-[30vw] hidden md:block sm:!text-[22vw] mt-5  md:mt-4 lg:mt-0 leading-none "
             >
-              HELLLOOO!!
+              HELlLOOO!!
+            </h1>
+             <h1
+              
+              className="text-[30vw] text-center ml-1 block md:hidden  sm:!text-[22vw] mt-5  md:mt-4 lg:mt-0 leading-none "
+            >
+              HELLOOO!!
             </h1>
           </div>
         </section>
         {/*  about*/}
-        <section className=" px-6  pl-10 bg-[#020617] text-[#f9f4eb]  w-full">
+        <section className=" p-6 lg:pl-10 bg-[#020617] text-[#f9f4eb]  w-full">
           <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
             <div
              
-              className="bg-[#020617] overflow-hidden h-full"
+              className="bg-red-100 overflow-hidden h-full"
               
             >
               <ParallaxImage src="/ashu2.jpg"></ParallaxImage>
@@ -118,7 +124,7 @@ const About2 = () => {
                 <h2 className="!text-[12vw] whitespace-nowrap hidden md:block ">
                   I'M <br /> ASHU DUREJA
                 </h2>
-                <h2 className="!text-[15vw] mt-4 text-center whitespace-nowrap block md:hidden ">
+                <h2 className="!text-[16vw] mt-4 text-center whitespace-nowrap block md:hidden ">
                   I'M ASHU DUREJA
                 </h2>
             
@@ -163,7 +169,7 @@ const About2 = () => {
                   thoughtful code and intuitive layouts. Outside of tech, I
                   enjoy going to the gym and watching anime—it keeps me balanced
                   and inspired. I believe in crafting digital experiences that
-                  feel both beautiful and <br/>functional. 
+                  feel both beautiful  and functional. 
                 </p>
               </div>
 

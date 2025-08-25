@@ -72,8 +72,9 @@ const ParallaxImage = ({ src, alt }) => {
       alt={alt}
       style={{
         willChange: "transform",
-        transform: "translateY(0) scale(1.5)",
+        transform: "translateY(0) scale(1)",
       }}
+      className="!object-cover"
     />
   );
 };
