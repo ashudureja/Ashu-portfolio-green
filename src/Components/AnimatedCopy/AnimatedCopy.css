@@ -1,0 +1,54 @@
+/* Base animated copy styles */
+.animated-copy {
+  /* Preserve layout during text splitting */
+  box-sizing: border-box;
+}
+
+/* Line containers - prevent layout shift */
+[class*="line-"] {
+  overflow: hidden !important;
+  display: block;
+  position: relative;
+}
+
+/* Inner animated spans */
+[class*="line-inner-"] {
+  display: block;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Utility classes for common text size issues */
+.animated-copy.preserve-width {
+  width: fit-content;
+  max-width: 100%;
+}
+
+.animated-copy.no-wrap {
+  white-space: nowrap;
+}
+
+.animated-copy.break-words {
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* For responsive text that might change size */
+.animated-copy.responsive {
+  width: 100% !important;
+}
+
+/* Fix for large text that might cause reflow */
+.animated-copy.large-text {
+  line-height: 1.2;
+  word-spacing: normal;
+  letter-spacing: normal;
+}
+
+/* Smooth font rendering for animations */
+.animated-copy {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}

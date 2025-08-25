@@ -1,0 +1,320 @@
+@import "tailwindcss";
+
+:root {
+  --color-accent: #d6ff62;
+  --color-light: #fff;
+  --color-dark: #1d1d1d;
+}
+
+@font-face {
+  font-family: 'heading';
+  font-weight: 100;
+  src: url('./heading.otf') format('opentype');
+}
+
+
+
+@font-face {
+  font-family: "FK Screamer";
+  font-weight: 100;
+  src: url("./assets/fonts/fk-screamer.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "font1";
+  font-weight: 100;
+  src: url("./assets/fonts/fk-screamer.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Grotesk";
+  font-weight: 100;
+  src: url("/font.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 200;
+  src: url("./assets/fonts/pp-editorial-new-thin.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 300;
+  src: url("./assets/fonts/pp-editorial-new-ultralight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 500;
+  src: url("./assets/fonts/pp-editorial-new-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 700;
+  src: url("./assets/fonts/pp-editorial-new-bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PP Editorial New";
+  font-weight: 800;
+  src: url("./assets/fonts/pp-editorial-new-heavy.ttf") format("truetype");
+}
+@font-face {
+  font-family: "font2";
+ 
+  src: url("./assets/fonts/pp-editorial-new-regular.ttf") format("truetype");
+}
+
+
+
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  
+  
+  line-height: 1;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 10vw;
+  font-weight: 100;
+  line-height: 0.8;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 4vw;
+  font-weight: 300;
+  line-height: 0.9;
+}
+
+h4 {
+  text-transform: uppercase;
+  font-family: "Grotesk";
+  font-size: 9.5vw;
+  font-weight: 100;
+  line-height: 0.7;
+}
+
+p.primary {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+p,
+
+a {
+  text-decoration: none;
+  font-family: "PP Editorial New";
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.15;
+}
+
+/* button {
+  position: relative;
+  border: none;
+  outline: none;
+  box-shadow: none;
+ 
+  background-color: var(--color-accent) !important;
+} */
+
+/* view-transitions.css */
+
+
+
+button a {
+  color: var(--color-dark);
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-weight: 100;
+  font-size: 28px;
+}
+
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100%;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-light);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader{
+  height: calc(100vh + 200px);
+  width: 100%;
+  position: fixed;
+}
+
+.loader svg{
+  height: 100%;
+  width: 100%;
+}
+
+.loader svg path{
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.spinner {
+  animation: spin 10s linear infinite; /* slowed down to 10 seconds per rotation */
+}
+
+
+.latest-updates {
+  background-color: var(--color-light);
+  
+  padding: 2em 1em;
+}
+
+.mix-tape {
+  position: relative;
+ 
+  width: 100vw;
+  padding: 2em 0;
+  text-align: center;
+  color: var(--color-dark);
+  background-color: var(--color-accent);
+}
+
+.mix-tape h1 {
+  margin-top: 0.25em;
+}
+
+.mix-tape p.primary {
+  padding-bottom: 0.25em;
+}
+
+.tape {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.strip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300%;
+}
+
+.tape-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+}
+
+.tape-info {
+  width: 40%;
+  margin: 2em auto;
+}
+
+.tape-info p:nth-child(1) {
+  font-weight: 500;
+}
+
+.tape-info .sticker {
+  margin-top: 4em;
+}
+
+.latest-updates p.lp-tagline {
+  text-align: left;
+  width: 35%;
+  margin: 0 auto;
+}
+
+.updates-page-link {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 2em 0;
+}
+
+.updates-page-link a {
+  text-transform: uppercase;
+  font-family: "FK Screamer";
+  font-size: 28px;
+  color: var(--color-dark);
+}
+
+.latest-updates .article-link p a {
+  color: var(--color-dark);
+}
+
+
+.perspective-1000 {
+          perspective: 1000px;
+        }
+        .transform-style-preserve-3d {
+          transform-style: preserve-3d;
+        }
+        .backface-hidden {
+          backface-visibility: hidden;
+        }
+        .rotateY-180 {
+          transform: rotateY(180deg);
+        }
+        @keyframes float {
+          0% { transform: translate(-50%, -50%); }
+          50% { transform: translate(-50%, -55%); }
+          100% { transform: translate(-50%, -50%); }
+        }
+        .animate-float {
+          animation: float 2s ease-in-out infinite;
+        }
+
+
+        @keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 16s linear infinite;
+}
+
+
+
+
+
+
+
+
+
+
+
