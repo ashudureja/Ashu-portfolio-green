@@ -69,7 +69,7 @@ const AnimatedPage = ({ children }) => {
 
 const App = () => {
   const location = useLocation();
-z
+
   // This effect scrolls the window to the top on every route change
   useEffect(() => {
     window.scrollTo(0, 0);
