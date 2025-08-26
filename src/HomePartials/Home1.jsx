@@ -38,6 +38,7 @@ const Home1 = () => {
           <img
             className="h-full w-full relative !object-cover  "
             src="./bb4.JPG"
+            loading="lazy"
           ></img>
           <div
             className="absolute -top-4 -right-4 sm:-top-5 sm:-right-5 lg:w-14 lg:h-14 h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-black text-[
