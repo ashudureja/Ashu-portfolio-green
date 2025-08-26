@@ -123,7 +123,7 @@ const App = () => {
   return (
     <div className='bg-[#020617] min-h-screen w-full'>
       {loading ? <div className=' bg-gradient-to-br from-gray-900 via-black to-gray-900 gap-15 md:gap-50  h-screen w-full flex flex-col md:flex-row items-center justify-center ]'>
-        <div className='font-[font2] text-white text-xs tracking-widest'>DESIGNER</div>
+        <div className='font-[font2] text-white text-xs tracking-widest'>DEVELOPER</div>
         <div className='w-25 h-60 border rounded-full py-5 border-gray-800 flex flex-col justify-between items-center'>
          
           <GiFlowerEmblem className='text-lime-400/90 spin' />
@@ -131,7 +131,7 @@ const App = () => {
            <GiFlowerEmblem className='text-lime-400/90 spin' />
             
         </div>
-        <div className='font-[font2] text-white tracking-widest text-xs'>DEVELOPER</div>
+        <div className='font-[font2] text-white tracking-widest text-xs'>DESIGNER</div>
         
         
        
