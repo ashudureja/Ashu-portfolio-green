@@ -14,7 +14,7 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import Copy from "../Components/Copy";
 import { motion } from "framer-motion";
 import Sun from "../Components/Sun";
-import Homelast from "../HomePartials/Homelast"
+import Homelast from "../HomePartials/Homelast";
 
 const About2 = () => {
   const lenis = useLenis(({ scroll }) => {});
@@ -94,16 +94,10 @@ const About2 = () => {
         <section className="w-screen   flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
           <div className="overflow-hidden w-full h-full">
             {" "}
-            <h1
-              
-              className="text-[30vw] hidden md:block sm:!text-[22vw] mt-5  md:mt-4 lg:mt-0 leading-none "
-            >
+            <h1 className="text-[30vw] hidden md:block sm:!text-[22vw] mt-5  md:mt-4 lg:mt-0 leading-none ">
               HELlLOOO!!
             </h1>
-             <h1
-              
-              className="text-[30vw] text-center ml-1 block md:hidden  sm:!text-[22vw] mt-5  md:mt-4 lg:mt-0 leading-none "
-            >
+            <h1 className="text-[30vw] text-center ml-1 block md:hidden  sm:!text-[22vw] mt-5  md:mt-4 lg:mt-0 leading-none ">
               HELLOOO!!
             </h1>
           </div>
@@ -111,33 +105,25 @@ const About2 = () => {
         {/*  about*/}
         <section className=" p-6 lg:pl-10 bg-[#020617] text-[#f9f4eb]  w-full">
           <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
-            <div
-             
-              className="bg-red-100 overflow-hidden h-full"
-              
-            >
+            <div className="bg-red-100 overflow-hidden h-full">
               <ParallaxImage src="/ashu2.jpg"></ParallaxImage>
             </div>
             <div className="flex flex-col justify-between">
               <div className="flex flex-col gap-8">
-                
                 <h2 className="!text-[12vw] whitespace-nowrap hidden md:block ">
                   I'M <br /> ASHU DUREJA
                 </h2>
                 <h2 className="!text-[16vw] mt-4 text-center whitespace-nowrap block md:hidden ">
                   I'M ASHU DUREJA
                 </h2>
-            
-              
+
                 <h3 className="text-lime-400 whitespace-nowrap hidden md:block">
                   Frontend Deveolper & UI/UX DESIGNER
                 </h3>
                 <h3 className="text-lime-400 !text-[9vw] -mt-2 text-center whitespace-nowrap block md:hidden">
-                  Frontend Deveolper & <br/> UI/UX DESIGNER
+                  Frontend Deveolper & <br /> UI/UX DESIGNER
                 </h3>
-              
 
-              
                 <p className="sm:!text-[24px]  hidden md:block    ">
                   Hi, I’m Ashutosh Dureja, a 27-year-old web developer and
                   designer based in Sydney, currently pursuing a Masters degree
@@ -150,14 +136,14 @@ const About2 = () => {
                   thoughtful code and intuitive layouts. Outside of tech, I
                   enjoy going to the gym and watching anime—it keeps me balanced
                   and inspired. I believe in crafting digital experiences that
-                  feel both beautiful and functional. I believe in crafting digital experiences that
-                  feel both beautiful and functional.This portfolio showcases
-                  my work, my style, and my journey as a frontend developer.
-                  Thanks for stopping by, and I hope you find something here
-                  that sparks your interest.
+                  feel both beautiful and functional. I believe in crafting
+                  digital experiences that feel both beautiful and
+                  functional.This portfolio showcases my work, my style, and my
+                  journey as a frontend developer. Thanks for stopping by, and I
+                  hope you find something here that sparks your interest.
                 </p>
-             
-               <p className="sm:!text-[24px] block md:hidden text-center   ">
+
+                <p className="sm:!text-[24px] block md:hidden text-center   ">
                   Hi, I’m Ashutosh Dureja, a 27-year-old web developer and
                   designer based in Sydney, currently pursuing a Masters degree
                   in IT. I’m passionate about creating modern, responsive
@@ -169,13 +155,13 @@ const About2 = () => {
                   thoughtful code and intuitive layouts. Outside of tech, I
                   enjoy going to the gym and watching anime—it keeps me balanced
                   and inspired. I believe in crafting digital experiences that
-                  feel both beautiful  and functional. 
+                  feel both beautiful and functional.
                 </p>
               </div>
 
-              <button className="p-2 text-black bg-lime-400 !text-[2vw] mt-8 sm:mt-6 md:mt-0">
+              <button className="p-2 text-black bg-lime-400  mt-8 sm:mt-6 md:mt-0">
                 {" "}
-                <h3>resume</h3>
+                <h3 className="!text-[6vw] md:!text-[4vw]">resume</h3>
               </button>
             </div>
           </div>
@@ -183,21 +169,18 @@ const About2 = () => {
 
         {/* skills*/}
 
-        <section className="min-h-screen p-6 md:p-12 w-full bg-[#020617] text-white font-sans">
+        <section className="min-h-screen mt-4 sm:mt-2 md:mt-0 p-6 md:p-12 w-full bg-[#020617] text-white font-sans">
           {/* Education Section */}
-          <div className="mb-16 md:mb-24">
+          <div className="mb-12 md:mb-24">
             <div className="flex flex-row items-end justify-between mb-6 md:mb-8">
               <div className="overflow-hidden w-full h-full">
                 {" "}
-                <h1
-                  
-                  className="!text-[13vw]  leading-[0.8]  text-lime-400 "
-                >
+                <h1 className=" text-center md:text-left text-[15vw] md:!text-[13vw]  leading-[0.8]  text-lime-400 ">
                   {" "}
                   Education
                 </h1>
               </div>
-              <span className="!md:text-lg !text-sm uppercase whitespace-nowrap tracking-widest text-gray-400 mt-2 md:mt-0">
+              <span className=" hidden md:block !md:text-lg !text-sm uppercase whitespace-nowrap tracking-widest text-gray-400 mt-2 md:mt-0">
                 Academic Journey
               </span>
             </div>
@@ -212,42 +195,41 @@ const About2 = () => {
               <div className="md:col-span-5 relative">
                 <div className="md:sticky md:top-24">
                   <div className="hidden md:block h-32 w-32 bg-lime-400 mix-blend-overlay opacity-20 rounded-full absolute -left-10 -top-10"></div>
-                  <p className="text-base md:text-lg leading-relaxed text-gray-300">
+                  <p className=" text-center text-base md:text-lg leading-relaxed ">
                     My academic path has equipped me with both technical
                     expertise and strategic thinking capabilities.
                   </p>
                 </div>
               </div>
 
-              <div className="md:col-span-7 space-y-10 md:space-y-16">
-                <div className="relative pl-6 md:pl-8 border-l-2 border-lime-400/30">
-                  <div className="absolute -left-[7px] md:-left-[9px] top-0 h-3 w-3 md:h-4 md:w-4 rounded-full bg-lime-400"></div>
-                  <h3 className="text-2xl md:text-3xl font-bold mb-2">
+              <div className="md:col-span-7 space-y-10 md:space-y-16 text-center md:text-left">
+                <div className="relative   pl-4 md:pl-8 border-l-1 border-lime-400/30">
+ <div className="absolute -left-[7px] md:-left-[9px]  h-3 w-3 md:h-4 md:w-4 rounded-full bg-lime-400"></div>
+                  <div className="text-[7vw] md:text-[4vw] font-[font1]   uppercase mb-2">
                     Masters of Information Technology
-                  </h3>
-                  <p className="text-gray-400 uppercase text-xs md:text-sm tracking-wider mb-1">
+                  </div>
+                  <p className="text-gray-400 uppercase text-xs md:text-sm mb-1">
                     Kaplan Business School, Sydney
                   </p>
                   <p className="text-lime-400 font-mono text-xs md:text-sm">
                     [2023 - 2025]
                   </p>
-                  <p className="mt-3 md:mt-4 text-gray-300 leading-relaxed text-sm md:text-base">
+                  <p className="mt-2 md:mt-4 text-gray-300 leading-relaxed text-sm md:text-base">
                     Specialized in Web Development with distinction honors.
                   </p>
                 </div>
-
-                <div className="relative pl-6 md:pl-8 border-l-2 border-lime-400/30">
-                  <div className="absolute -left-[7px] md:-left-[9px] top-0 h-3 w-3 md:h-4 md:w-4 rounded-full bg-lime-400"></div>
-                  <h3 className="text-2xl md:text-3xl font-bold mb-2">
+               <div className="relative pl-3 md:pl-8 border-l-2 border-lime-400/30">
+ <div className="absolute -left-[7px] md:-left-[9px] top-0 h-3 w-3 md:h-4 md:w-4 rounded-full bg-lime-400"></div>
+                  <div className="text-[7vw] md:text-[4vw]  font-[font1] uppercase mb-2">
                     Bachelor of Instrumentation Engineering
-                  </h3>
+                  </div>
                   <p className="text-gray-400 uppercase text-xs md:text-sm tracking-wider mb-1">
                     NIT, Jalandhar
                   </p>
                   <p className="text-lime-400 font-mono text-xs md:text-sm">
                     [2018 - 2022]
                   </p>
-                  <p className="mt-3 md:mt-4 text-gray-300 leading-relaxed text-sm md:text-base">
+                  <p className="mt-2 md:mt-4 text-gray-300 leading-relaxed text-sm md:text-base">
                     Focused on Instrumentation Systems, Control Engineering, and
                     Human-Machine Interfaces.
                   </p>
@@ -258,16 +240,13 @@ const About2 = () => {
 
           {/* Skills Section */}
           <div>
-            <div className="flex flex-col-reverse md:flex-row md:items-end justify-between mb-6 md:mb-8">
-              <span className="md:text-lg !text-sm uppercase tracking-widest whitespace-nowrap text-gray-400 mt-2 md:mt-0">
+            <div className="flex p-6 flex-col-reverse md:flex-row md:items-end justify-between ">
+              <span className=" hidden md:block md:text-lg !text-sm uppercase tracking-widest whitespace-nowrap text-gray-400 mt-2 md:mt-0">
                 Technical Expertise
               </span>
               <div className="overflow-hidden w-full h-full">
                 {" "}
-                <h1
-                  
-                  className="!text-[13vw] leading-[0.8]  text-lime-400 text-end "
-                >
+                <h1 className=" text-[16vw] md:!text-[13vw] leading-[0.8]  text-lime-400 text-center md:text-end ">
                   Skills
                 </h1>
               </div>
@@ -276,21 +255,25 @@ const About2 = () => {
             <motion.div
               initial={{ scaleX: 0 }}
               whileInView={{ scaleX: 1 }}
-              transition={{ duration: 1,ease:"circOut" }}
+              transition={{ duration: 1, ease: "circOut" }}
               className="h-px w-full bg-gradient-to-r from-transparent via-white to-transparent mb-8 md:mb-12 origin-right"
             />
 
             <div className="flex flex-col md:grid md:grid-cols-12 gap-6 md:gap-8">
+               <p className=" block md:hidden text-center text-base md:text-lg leading-relaxed  mb-4 md:mb-0">
+                    A diverse skill set developed through academic projects and
+                    real life experience.
+                  </p>
               <div className="md:col-span-7">
                 <Skills />{" "}
               </div>
               <div className="md:col-span-5">
-                <div className="md:sticky md:top-24">
-                  <p className="text-base md:text-lg leading-relaxed text-gray-300 mb-4 md:mb-0">
+                <div className="md:sticky md:top-24 hidden md:block ">
+                  <p className="text-center text-base md:text-lg leading-relaxed text-gray-300 mb-4 md:mb-0">
                     A diverse skill set developed through academic projects and
                     real life experience.
                   </p>
-                  <div className="mt-4 md:mt-8 p-4 md:p-6 bg-gray-900/50 rounded-lg border border-gray-800">
+                  <div className=" mt-4 md:mt-8 p-4 md:p-6 bg-gray-900/50 rounded-lg border border-gray-800">
                     <h4 className="text-lime-400 !text-[4vw] font-bold mb-3 md:mb-4">
                       Key Strengths
                     </h4>
@@ -368,7 +351,7 @@ const About2 = () => {
         </section> */}
 
         {/* chicky bhaiya*/}
-       
+
         {/* <section className="relative w-screen py-32 overflow-hidden">
           <div className="relative w-1/2 mx-auto">
             <div className="relative pl-8">
@@ -402,8 +385,7 @@ const About2 = () => {
             </div>
           </div>
         </section> */}
-        <Homelast/>
-       
+        <Homelast />
       </div>
     </ReactLenis>
   );

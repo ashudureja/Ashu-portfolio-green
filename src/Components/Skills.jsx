@@ -12,7 +12,7 @@ export default function Skills() {
   ];
 
   return (
-    <div className=" p-8 rounded-lg w-full">
+    <div className=" rounded-lg w-full">
       <div className="space-y-6">
         {skills.map((skill, index) => (
           <div key={index} className="space-y-2">
@@ -20,7 +20,7 @@ export default function Skills() {
               <p className="text-white !font-medium text-lg">
                 {skill.name}
               </p>
-              <span className="text-gray-300 font-medium text-lg">
+              <span className="text-gray-300 font-medium text-lg font-[font2]">
                 {skill.percentage}%
               </span>
             </div>
