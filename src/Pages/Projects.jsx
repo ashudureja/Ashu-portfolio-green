@@ -105,6 +105,13 @@ const Updates = () => {
   // Article component
   const ArticleCard = ({ article }) => (
     <a href={article.category} target="_blank" className="relative border group h-[500px] lg:h-[750px]  p-2 lg:p-5 border-white/30 ">
+       <div className="absolute z-10 top-4 right-4 sm:top-7 sm:right-7 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-white/30 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                  </div>
+                </div>
       
             
       <div  className="relative h-[400px] sm:h-[350px] group  lg:h-[600px] overflow-hidden shadow-lg">
@@ -119,13 +126,13 @@ const Updates = () => {
        
       </div>
       <div className=" w-full flex flex-col gap-5 items-center justify-center">
-        <h3 className="text-lg text-lime-400 sm:text-xl mt-4 lg:text-2xl font-medium leading-tight">
+        <h3 className="!text-[8vw] text-lime-400 sm:text-xl mt-4 md:!text-[5.5vw] lg:!text-[4vw] font-medium leading-tight">
            "{article.title}"
         </h3>
         <div className="grid grid-cols-4 w-full">
             {skills.map((skill,i)=>{
             return(
-                <h5 className="h-6 flex justify-center items-center   text-gray-300 border border-white/20">{skill}</h5>
+                <h5 className="h-6 flex text-sm md:text-lg justify-center items-center   text-gray-300 border border-white/20">{skill}</h5>
             )
         })}
         </div>
@@ -139,8 +146,8 @@ const Updates = () => {
     <ReactLenis root>
       <div className="">
         {/* Updates Hero Section */}
-        <section className="w-screen h-[50vh] sm:h-[45vh] flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
-           <div className="overflow-hidden w-full h-full"> <h1 className="text-[18vw]  sm:!text-[22vw] leading-none ">Projects</h1></div>
+        <section className="w-screen p-4 md:p-4 flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
+           <div className="overflow-hidden w-full h-full"> <h1 className="text-[26vw]  sm:!text-[22vw] leading-none ">Projects</h1></div>
           
         </section>
 

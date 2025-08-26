@@ -175,7 +175,7 @@ const About2 = () => {
             <div className="flex flex-row items-end justify-between mb-6 md:mb-8">
               <div className="overflow-hidden w-full h-full">
                 {" "}
-                <h1 className=" text-center md:text-left text-[15vw] md:!text-[13vw]  leading-[0.8]  text-lime-400 ">
+                <h1 className=" text-center md:text-left text-[16vw] md:!text-[13vw]  leading-[0.8]  text-lime-400 ">
                   {" "}
                   Education
                 </h1>
