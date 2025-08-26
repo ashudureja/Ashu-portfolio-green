@@ -104,7 +104,7 @@ const Updates = () => {
   const skills=["React","JavaScript","TailwindCSS","FramerMotion"]
   // Article component
   const ArticleCard = ({ article }) => (
-    <a href={article.category} target="_blank" className="relative border group h-[500px] lg:h-[750px]  p-2 lg:p-5 border-white/30 ">
+    <a href={article.category} target="_blank" className="relative border group h-[400px] md:h-[470px] lg:h-[750px]  p-2 lg:p-5 border-white/30 ">
        <div className="absolute z-10 top-4 right-4 sm:top-7 sm:right-7 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-white/30 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-300">
                   <div className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
@@ -114,13 +114,20 @@ const Updates = () => {
                 </div>
       
             
-      <div  className="relative h-[400px] sm:h-[350px] group  lg:h-[600px] overflow-hidden shadow-lg">
+      <div  className="relative h-[300px] md:h-[350px] group  lg:h-[600px] overflow-hidden shadow-lg">
         <div className="absolute z-50 inset-0 bg-black opacity-0 group-hover:opacity-30 transition-all duration-300 "/>
                
         <ParallaxImage 
           src={article.image} 
           alt={article.alt}
-          className=" 
+          className=" hidden md:block
+            "
+        />
+         <ParallaxImage 
+          src={article.image} 
+          alt={article.alt}
+          speed={0.1}
+          className=" block md:hidden
             "
         />
        
