@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import ParallaxImage from "../../Components/ParallaxImage";
 import { ReactLenis, useLenis } from "lenis/react";
 import AnimatedText from "../../Components/AnimatedText";
+import Homelast from "../../HomePartials/Homelast";
 
 const Contact = () => {
   const lenis = useLenis(({ scroll }) => {});
@@ -11,14 +12,14 @@ const Contact = () => {
     <ReactLenis root>
       <div className="">
         {/* Contact Hero Section */}
-        <section className="p-4 md:px-8 relative w-full bg-[#020617] flex flex-col items-center gap-16">
+        <section className="p-4 md:px-8 relative w-full bg-[#020617] flex flex-col items-center gap-7 md:gap-16">
           <div className="overflow-hidden w-full">
             <h1 className=" text-[24.3vw] text-lime-400 text-center w-full sm:text-[17vw] md:text-[20vw] leading-[0.85] font-light tracking-tight ">
               Get in touch
             </h1>
           </div>
 
-          <div className=" w-full max-w-7xl mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16">
+          <div className=" w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-16">
             <div className=" flex-1 flex flex-col gap-10">
               {/* Intro Message Card */}
               <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 p-8 lg:p-10 text-lime-400 border border-lime-400/30 backdrop-blur-sm transition-all duration-500 hover:border-lime-400/20 hover:shadow-2xl hover:shadow-lime-400/5">
@@ -173,6 +174,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
+          <Homelast/>
         </section>
 
         {/* Contact Banner Section */}

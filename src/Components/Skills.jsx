@@ -24,9 +24,9 @@ export default function Skills() {
                 {skill.percentage}%
               </span>
             </div>
-            <div className="w-full bg-gray-700 rounded-full h-2">
+            <div className="w-full bg-gray-700 rounded-full h-[5px] md:h-2">
               <div 
-                className="bg-lime-400 h-2 rounded-full transition-all duration-1000 ease-out"
+                className="bg-lime-400 h-[5px] md:h-2 rounded-full transition-all duration-1000 ease-out"
                 style={{ width: `${skill.percentage}%` }}
               ></div>
             </div>

@@ -12,6 +12,11 @@
   src: url('./heading.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'signature';
+  font-weight: 100;
+  src: url('./Signature.otf') format('opentype');
+}
 
 
 @font-face {

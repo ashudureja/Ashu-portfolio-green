@@ -1,4 +1,5 @@
 import React from 'react';
+import { Instagram, Facebook, X, Linkedin, Youtube ,Github} from "lucide-react";
 
 // A simple star icon component for reusability
 const StarIcon = () => (
@@ -12,39 +13,46 @@ const StarIcon = () => (
 // Main component for the section
 const Homelast = () => {
   return (
-    <div className="bg-[#020617] h-[70vh] md:h-[100vh] text-white font-sans flex flex-col p-4 md:p-6 lg:p-8 mt-10">
+    <div className="bg-[#020617]  w-full font-sans flex flex-col p-4 md:p-6 lg:p-8 mt-10">
 
       {/* Main content card with lime green background */}
-      <div className="bg-lime-400 text-black rounded-3xl p-10 md:p-16 lg:p-20 flex flex-col items-center text-center">
+      <div className="bg-lime-400 text-black rounded-2xl p-10 md:p-16 lg:p-20 flex flex-col gap-4 items-center text-center">
 
         {/* Decorative Stars */}
-        <div className="flex gap-4 mb-8">
-          <StarIcon />
-          <StarIcon />
-          <StarIcon />
-          <StarIcon />
+        <div className="flex gap-4">
+         
         </div>
 
         {/* Main Heading */}
-        <div className="font-extrabold text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none">
+        <div className="font-extrabold font-[font2] text-4xl md:text-6xl lg:text-7xl tracking-tighter leading-none">
           <div>LET'S CONNECT</div>
           <div>YOUR IDEAS</div>
         </div>
 
         {/* Action Buttons */}
-        <div className="flex  sm:flex-row gap-5 mt-10">
-          <div className="bg-black text-white rounded-full px-8 py-4 font-semibold cursor-pointer">
-            <div>CONTACT </div>
-          </div>
-          <div className="border border-black text-black rounded-full px-8 py-4 font-semibold cursor-pointer">
-            <div>FOLLOW</div>
-          </div>
+        
+          <div className="flex gap-3 sm:gap-4 flex-wrap justify-center">
+           <a href="https://www.linkedin.com/in/ashutosh-dureja-919072209/" className="bg-black/30 cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-black/20 transform transition-colors  duration-[0.4s] ease-out">
+            <Linkedin size={16} className="sm:w-[18px] sm:h-[18px]" />
+          </a>
+          <a href="https://www.instagram.com/ashudureja_/" className="rounded-full cursor-pointer bg-black/30 p-2 sm:p-2.5 hover:bg-black/20 transform transition-colors  duration-[0.4s] ease-out">
+            <Instagram size={16} className="sm:w-[18px]  sm:h-[18px]" />
+          </a>
+          <a href="https://github.com/ashudureja?tab=overview&from=2025-06-01&to=2025-06-30" className="bg-black/30  cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-black/20transform transition-colors  duration-[0.4s] ease-out">
+            <Github size={16} className="sm:w-[18px] sm:h-[18px]" />
+          </a>
+          <a href="https://www.linkedin.com/in/ashutosh-dureja-919072209/" className="bg-black/30 cursor-pointer rounded-full p-2 sm:p-2.5 hover:bg-black/20 transform transition-colors  duration-[0.4s] ease-out">
+            <X size={16} className="sm:w-[18px] sm:h-[18px]" />
+          </a>
+         
         </div>
+         
+        
       </div>
 
       {/* Spacer and "Das Grüne" text */}
       <div className="h-50  flex flex-col items-center justify-center">
-        <div className="text-5xl text-gray-200" style={{ fontFamily: 'serif' }}>
+        <div className=" text-[6vw] md:text-5xl font-[signature] text-gray-200" >
           Ashu Dureja
         </div>
          <div className="text-center block md:hidden mt-2 text-xs text-gray-500 uppercase tracking-widest">
