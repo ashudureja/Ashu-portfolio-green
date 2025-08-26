@@ -174,8 +174,9 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <Homelast/>
+        
         </section>
+          <Homelast/>
 
         {/* Contact Banner Section */}
         {/* <section className="contact-banner relative w-full h-[100vh] flex flex-col md:flex-row bg-[color:var(--color-light)] overflow-hidden">

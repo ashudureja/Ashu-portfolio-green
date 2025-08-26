@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'heading';
   font-weight: 100;
-  src: url('./heading.otf') format('opentype');
+  src: url('/heading.otf') format('opentype');
 }
 
 @font-face {

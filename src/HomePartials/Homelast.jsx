@@ -52,7 +52,7 @@ const Homelast = () => {
 
       {/* Spacer and "Das Grüne" text */}
       <div className="h-50  flex flex-col items-center justify-center">
-        <div className=" text-[6vw] md:text-5xl font-[signature] text-gray-200" >
+        <div className=" text-[6.5vw] md:text-5xl font-[signature] text-gray-200" >
           Ashu Dureja
         </div>
          <div className="text-center block md:hidden mt-2 text-xs text-gray-500 uppercase tracking-widest">
