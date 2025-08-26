@@ -20,7 +20,7 @@ const Updates = () => {
    const articles = [
     {
       id: 1,
-      image: "/projects/gd1.png",
+      image: "/projects/gd1.webp",
       alt: "AI Voices Ba",
       date: "6.19.2024",
       category: "https://ashu-screenshots-gradient.netlify.app",
@@ -28,7 +28,7 @@ const Updates = () => {
     },
     {
       id: 2,
-      image: "/projects/at3.png",
+      image: "/projects/at3.webp",
       alt: "AI Ethics Discussion",
       date: "6.19.2024",
       category: "https://ashu-ai-trainer.netlify.app",
@@ -36,7 +36,7 @@ const Updates = () => {
     },
     {
       id: 3,
-     image: "/projects/mc2.png",
+     image: "/projects/mc2.webp",
       alt: "Artists' Rights",
       date: "6.19.2024",
       category: "https://ashu-ecommerce.netlify.app",
@@ -44,7 +44,7 @@ const Updates = () => {
     },
     {
       id: 4,
-     image: "/projects/p4.png",
+     image: "/projects/p4.webp",
       alt: "AI and Music",
       date: "6.19.2024",
       category: "https://animehub12.netlify.app",
@@ -52,7 +52,7 @@ const Updates = () => {
     },
     {
       id: 5,
-     image: "/projects/pk4.png",
+     image: "/projects/pk4.webp",
       alt: "AI and Music",
       date: "6.19.2024",
       category: "https://pokedoxmaster.netlify.app",
@@ -60,7 +60,7 @@ const Updates = () => {
     },
     {
       id: 6,
-     image: "/projects/p5.png",
+     image: "/projects/p5.webp",
       alt: "Policy Reforms",
       date: "6.19.2024",
       category: "https://awards-animations.netlify.app",
@@ -68,7 +68,7 @@ const Updates = () => {
     },
      {
       id: 7,
-     image: "/projects/p1.png",
+     image: "/projects/p1.webp",
       alt: "Policy Reforms",
       date: "6.19.2024",
       category: "https://yeezykanye.netlify.app",
@@ -76,7 +76,7 @@ const Updates = () => {
     },
      {
       id: 8,
-     image: "/projects/bl.png",
+     image: "/projects/bl.webp",
       alt: "Policy Reforms",
       date: "6.19.2024",
       category: "https://ashu-awwwards.netlify.app",
@@ -84,7 +84,7 @@ const Updates = () => {
     },
     {
       id: 9,
-     image: "/projects/algora.png",
+     image: "/projects/algora.webp",
       alt: "Policy Reforms",
       date: "6.19.2024",
       category: "https://ashu-ai.netlify.app",
@@ -92,7 +92,7 @@ const Updates = () => {
     },
     {
       id: 10,
-     image: "/projects/an2.png",
+     image: "/projects/an2.webp",
       alt: "Future of AI",
       date: "6.19.2024",
       category: "https://shirtthreed.netlify.app",

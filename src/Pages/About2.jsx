@@ -106,7 +106,7 @@ const About2 = () => {
         <section className=" p-6 lg:pl-10 max-w-8xl mx-auto bg-[#020617] text-[#f9f4eb]  w-full">
           <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
             <div className="bg-red-100 overflow-hidden h-full">
-              <ParallaxImage src="/ashu2.jpg"></ParallaxImage>
+              <ParallaxImage src="/ashu2.webp"></ParallaxImage>
             </div>
             <div className="flex flex-col justify-between">
               <div className="flex flex-col gap-8">

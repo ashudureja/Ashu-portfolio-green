@@ -6,11 +6,11 @@ const BestProject = () => {
   const tags = ['REACT', 'JAVASCRIPT', 'TAILWIND CSS', 'GSAP'];
  
   const projects = [
-    { id: 4, image: "./projects/gd1.png", title: "Gradly", description: "Brand identity system", to: "https://ashu-screenshots-gradient.netlify.app" },
-    { id: 3, image: "./projects/at3.png", title: "AI Trainer", description: "Interactive experience", to: "https://ashu-ai-trainer.netlify.app" },
-    { id: 5, image: "./projects/mc2.png", title: "Minimal Ecommerce", description: "Motion graphics reel", to: "https://ashu-ecommerce.netlify.app/" },
-    { id: 1, image: "./projects/p4.png", title: "Anime Hub", description: "Creative design showcase", to: "https://animehub12.netlify.app" },
-    { id: 2, image: "./projects/pk4.png", title: "Pokedex", description: "Digital art collection", to: "https://pokedoxmaster.netlify.app" },
+    { id: 4, image: "./projects/gd1.webp", title: "Gradly", description: "Brand identity system", to: "https://ashu-screenshots-gradient.netlify.app" },
+    { id: 3, image: "./projects/at3.webp", title: "AI Trainer", description: "Interactive experience", to: "https://ashu-ai-trainer.netlify.app" },
+    { id: 5, image: "./projects/mc2.webp", title: "Minimal Ecommerce", description: "Motion graphics reel", to: "https://ashu-ecommerce.netlify.app/" },
+    { id: 1, image: "./projects/p4.webp", title: "Anime Hub", description: "Creative design showcase", to: "https://animehub12.netlify.app" },
+    { id: 2, image: "./projects/pk4.webp", title: "Pokedex", description: "Digital art collection", to: "https://pokedoxmaster.netlify.app" },
     { id: 6, image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop", title: "All projects", description: "special card", to: "/projects" },
   ];
 
