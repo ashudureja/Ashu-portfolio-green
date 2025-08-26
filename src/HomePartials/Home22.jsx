@@ -32,7 +32,8 @@ export default function ServicesSection() {
       id: 'web-development',
       name: 'Web Development',
       description: 'Building robust, scalable, and performant web applications tailored to your business needs needs.',
-      image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop&crop=center'
+      image: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=400&h=300&fit=crop&crop=center'
+     
     },
     {
       id: 'web-design',
@@ -47,10 +48,10 @@ export default function ServicesSection() {
       image: 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=400&h=300&fit=crop&crop=center'
     },
     {
-      id: 'brand-story',
+      id: 'SEO',
       name: 'Brand Story',
       description: 'Crafting compelling narratives and visual brand identities that resonate with your target market and tell your  story.',
-      image: 'https://images.unsplash.com/photo-1609921212029-bb5a28e60960?w=400&h=300&fit=crop&crop=center'
+       image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=300&fit=crop&crop=center'
     }
   ];
 
@@ -69,17 +70,18 @@ export default function ServicesSection() {
             <h1 className="text-7xl text-center md:text-left sm:text-7xl md:text-9xl text-white font-[font1] ">
               I CAN DO
             </h1>
-            <div className=" flex-wrap gap-2 md:gap-3 self-start md:self-end hidden md:flex">
-              {tags.map((tag) => (
-                <button
-                  key={tag}
-                  className="border border-gray-700 text-gray-400 rounded-full px-4 py-2 text-xs sm:text-sm flex items-center gap-2 hover:bg-gray-800 hover:text-white focus:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-lime-400 transition-all"
-                >
-                  <PlusCircleIcon />
-                  <span>{tag}</span>
-                </button>
-              ))}
-            </div>
+             {/* Tags */}
+          <div className=" flex-wrap gap-2 sm:gap-3 md:gap-4 hidden sm:flex ">
+            {tags.map((tag) => (
+              <div
+                key={tag}
+                className="border bg-black/20 backdrop-blur-sm border-white/20 text-gray-400 rounded-full px-3 py-1 sm:px-4 sm:py-1.5 text-xs sm:text-sm flex items-center gap-1.5 sm:gap-2 cursor-pointer hover:bg-gray-800 transition-colors"
+              >
+                <PlusCircleIcon />
+                <div>{tag}</div>
+              </div>
+            ))}
+          </div>
           </div>
         </div>
 
@@ -103,7 +105,7 @@ export default function ServicesSection() {
                 onKeyDown={(e) => e.key === 'Enter' && handleInteraction(service.id)}
               >
                 <div className="flex justify-center md:justify-between items-center py-3">
-                  <div className={`  text-3xl sm:text-4xl md:text-5xl font-[font2] transition-colors duration-300  text-white`}>
+                  <div className={`  text-3xl sm:text-4xl md:text-5xl font-[font2] transition-colors duration-300  text-white/90`}>
                     {service.name}
                   </div>
                   <MdOutlineArrowOutward 
@@ -129,7 +131,7 @@ export default function ServicesSection() {
                 className={`
                   pointer-events-none z-50 
                   absolute right-20 top-1/2 -translate-y-1/2
-                  w-40 h-50 rounded-sm 
+                  w-65 h-55 rounded-sm 
                   opacity-0 transition-all duration-300 scale-95
                   hidden md:block  group-hover:opacity-100
                   
@@ -138,7 +140,7 @@ export default function ServicesSection() {
                 <img 
                   src={service.image} 
                   alt={service.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full "
                 />
               </div>
             </div>

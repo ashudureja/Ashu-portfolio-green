@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Mobilemenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   
   // Updated pages array with route information
   const pages = [
@@ -12,6 +13,8 @@ const Mobilemenu = () => {
     { name: "PROJECTS", path: "/projects" },
     { name: "CONTACT", path: "/contact" }
   ];
+
+  
   
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -188,6 +191,8 @@ const Mobilemenu = () => {
     },
   };
 
+  const location=useLocation()
+
   return (
     <>
       {/* Menu Overlay */}
@@ -257,7 +262,7 @@ const Mobilemenu = () => {
                           setIsMenuOpen(false);
                         }}
                       >
-                        <span className="relative z-10">({item.name})</span>
+                        <span className={`relative z-10 ${location.pathname === item.path?"line-through decoration-1 decoration-white/70":""}`}>({item.name})</span>
                         {/* Elegant hover effect */}
                         <motion.div
                           className="absolute -inset-x-4 -inset-y-2 bg-white/5 rounded-lg -z-10"

@@ -273,18 +273,18 @@ const About2 = () => {
                     A diverse skill set developed through academic projects and
                     real life experience.
                   </p>
-                  <div className=" mt-4 md:mt-8 p-4 md:p-6 bg-gray-900/50 rounded-lg border border-gray-800">
-                    <h4 className="text-lime-400 !text-[4vw] font-bold mb-3 md:mb-4">
+                  <div className=" mt-4 md:mt-8 p-4 md:p-6 bg-gradient-to-br from-gray-900 via-black to-gray-900 rounded-lg border border-gray-800">
+                    <h4 className="text-lime-400 !text-[3vw] font-bold mb-3 md:mb-4">
                       Key Strengths
                     </h4>
-                    <ul className="space-y-2 text-gray-300 text-sm md:text-base">
+                    <ul className="space-y-2 text-gray-300 text-sm md:text-base font-[font2]">
                       <li className="flex items-center">
                         <span className="h-1 w-3 md:w-4 bg-lime-400 mr-2"></span>
                         Problem Solving
                       </li>
                       <li className="flex items-center">
                         <span className="h-1 w-3 md:w-4 bg-lime-400 mr-2"></span>
-                        Technical Architecture
+                        Technical Expertise
                       </li>
                       <li className="flex items-center">
                         <span className="h-1 w-3 md:w-4 bg-lime-400 mr-2"></span>

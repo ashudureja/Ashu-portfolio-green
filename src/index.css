@@ -5,6 +5,16 @@
   --color-light: #fff;
   --color-dark: #1d1d1d;
 }
+@theme {
+  --animate-border-beam: border-beam calc(var(--duration)*1s) infinite linear;
+@keyframes border-beam {
+  
+  100% {
+   offset-distance: 100%,
+  }
+}
+
+}
 
 @font-face {
   font-family: 'heading';
@@ -16,6 +26,12 @@
   font-family: 'signature';
   font-weight: 100;
   src: url('/Signature.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'ad';
+  font-weight: 100;
+  src: url('/ad.otf') format('opentype');
 }
 
 
@@ -72,7 +88,38 @@
   src: url("./assets/fonts/pp-editorial-new-regular.ttf") format("truetype");
 }
 
+.gradient-strike {
+  position: relative;
+}
 
+.gradient-strike::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%; /* center across the text */
+  height: 1px; /* line thickness */
+  transform: translateY(-50%);
+  background: linear-gradient(to right,white, white, white);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+/* Define the spin animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation to your element */
+.spin {
+  display: inline-block; /* or block, depending on your element */
+  animation: spin 5s linear infinite; /* 2s for one full rotation */
+}
 
 
 img {

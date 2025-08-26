@@ -4,9 +4,10 @@ export default function Skills() {
   const skills = [
     { name: 'React', percentage: 98 },
     { name: 'JavaScript', percentage: 99 },
+    { name: 'Next JS', percentage: 87 },
     { name: 'TypeScript', percentage: 85 },
     { name: 'Tailwind CSS', percentage: 90 },
-    { name: 'HTML5', percentage: 93 },
+    
     
     
   ];

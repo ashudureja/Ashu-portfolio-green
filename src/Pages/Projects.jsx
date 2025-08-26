@@ -105,7 +105,7 @@ const Updates = () => {
   // Article component
   const ArticleCard = ({ article }) => (
     <a href={article.category} target="_blank" className="relative border group h-[400px] md:h-[470px] lg:h-[750px]  p-2 lg:p-5 border-white/30 ">
-       <div className="absolute z-10 top-4 right-4 sm:top-7 sm:right-7 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-white/30 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center opacity-100 lg:opacity-0 group-hover:opacity-100 transition-all duration-300">
+       <div className="absolute z-10 top-4 right-4 sm:top-7 sm:right-7 w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 bg-white/30 backdrop-blur-sm border border-white/20 rounded-full flex items-center justify-center opacity-100 group-hover:opacity-100 transition-all duration-300">
                   <div className="w-3 h-3 sm:w-3.5 sm:h-3.5 md:w-4 md:h-4 text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />

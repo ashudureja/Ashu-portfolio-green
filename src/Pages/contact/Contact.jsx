@@ -22,7 +22,7 @@ const Contact = () => {
           <div className=" w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-16">
             <div className=" flex-1 flex flex-col gap-10">
               {/* Intro Message Card */}
-              <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 p-8 lg:p-10 text-lime-400 border border-lime-400/20 backdrop-blur-sm transition-all duration-500 hover:border-lime-400/20 hover:shadow-2xl hover:shadow-lime-400/5">
+              <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 p-8 lg:p-10 text-lime-400 border border-gray-800 backdrop-blur-sm transition-all duration-500 hover:border-lime-400/20 hover:shadow-2xl hover:shadow-lime-400/5">
                 <h3 className="text-center lg:text-left !text-[7vw] md:!text-[5.2vw] lg:!text-[4vw] mb-6 leading-tight tracking-wide">
                   Let's Build Something Great Together.
                 </h3>
@@ -30,7 +30,8 @@ const Contact = () => {
                   I'm open to freelance, full-time roles, and creative
                   collaborations.
                 </p>
-                <div className="mt-8 pt-6 border-t border-lime-400/20 flex items-center justify-center lg:justify-start">
+                 <div className="divider w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent my-8"></div>
+                <div className="mt-8 pt-6  flex items-center justify-center lg:justify-start">
                   <Link
                     to="/contact"
                     className="flex items-center gap-3 text-lime-400 font-['FK_Screamer'] text-lg tracking-wide hover:text-lime-300 transition-all duration-300 group"
@@ -54,7 +55,7 @@ const Contact = () => {
               </div>
 
               {/* Opportunities / Resume Section */}
-              <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 p-8 lg:p-10 text-lime-400 border  backdrop-blur-sm transition-all duration-500 border-lime-400/20 hover:shadow-2xl shadow-lime-400/5 space-y-6">
+              <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 p-8 lg:p-10 text-lime-400 border  backdrop-blur-sm transition-all duration-500 border-gray-800 hover:shadow-2xl shadow-lime-400/5 space-y-6">
                 <h3 className="text-center lg:text-left !text-[7vw] md:!text-[5.2vw] lg:!text-[4vw]text-lime-400 leading-tight tracking-wide">
                   Want to Collaborate?
                 </h3>
@@ -122,14 +123,14 @@ const Contact = () => {
                     <input
                       type="text"
                       placeholder="First Name"
-                      className="form-input w-full p-4 lg:p-5 uppercase font-['FK_Screamer'] text-lg lg:text-xl font-light text-[color:var(--color-dark)] bg-lime-400 placeholder-[color:var(--color-dark)] border-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
+                      className="form-input font-[font2] w-full p-4 lg:p-5 uppercase placeholder:font-[font2] text-lg lg:text-xl text-[color:var(--color-dark)] bg-lime-400 placeholder-[color:var(--color-dark)]  border-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
                     />
                   </div>
                   <div className="form-group flex-1">
                     <input
                       type="text"
                       placeholder="Last Name"
-                      className="form-input w-full p-4 lg:p-5 uppercase font-['FK_Screamer'] text-lg lg:text-xl font-light text-[color:var(--color-dark)] bg-lime-400 placeholder-[color:var(--color-dark)] border-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
+                      className="form-input w-full p-4 lg:p-5 uppercase font-[font2] text-lg lg:text-xl font-light text-[color:var(--color-dark)] bg-lime-400 placeholder-[color:var(--color-dark)] border-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
                     />
                   </div>
                 </div>
@@ -138,7 +139,7 @@ const Contact = () => {
                   <input
                     type="email"
                     placeholder="Email Address"
-                    className="form-input w-full p-4 lg:p-5 uppercase font-['FK_Screamer'] text-lg lg:text-xl font-light text-[color:var(--color-dark)] bg-lime-400 placeholder-[color:var(--color-dark)] border-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
+                    className="form-input w-full p-4 lg:p-5 uppercase font-[font2] text-lg lg:text-xl font-light text-[color:var(--color-dark)] bg-lime-400 placeholder-[color:var(--color-dark)] border-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
                   />
                 </div>
 
@@ -146,7 +147,7 @@ const Contact = () => {
                   <textarea
                     rows={6}
                     placeholder="Message"
-                    className="form-textarea w-full p-4 lg:p-5 uppercase font-['FK_Screamer'] text-lg lg:text-xl font-light text-[color:var(--color-dark)] bg-lime-400 placeholder-[color:var(--color-dark)] resize-none border-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
+                    className="form-textarea w-full p-4 lg:p-5 uppercase font-[font2] text-lg lg:text-xl font-light text-[color:var(--color-dark)] bg-lime-400 placeholder-[color:var(--color-dark)] resize-none border-none focus:ring-2 focus:ring-lime-300 transition-all duration-300"
                   ></textarea>
                 </div>
 
@@ -155,7 +156,7 @@ const Contact = () => {
                     type="submit"
                     className="flex items-center gap-3 font-['FK_Screamer'] text-xl lg:text-2xl text-lime-400 hover:text-lime-300 transition-all duration-300 group px-6 py-3 border border-lime-400/30 hover:border-lime-400/50 backdrop-blur-sm"
                   >
-                    <span>Submit</span>
+                    <span >SUBMIT</span>
                     <svg
                       className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
                       fill="none"

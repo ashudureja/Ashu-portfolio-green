@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useState } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
+import { GiFlowerEmblem } from "react-icons/gi";
+import { FaRegCircle } from "react-icons/fa";
+import { GoInfinity } from "react-icons/go";
 
 // Import your page components
 import Projects from './Pages/Projects';
@@ -66,35 +69,84 @@ const AnimatedPage = ({ children }) => {
   );
 };
 
+const AnimatedPage2 = ({ children }) => {
+  return (
+    <motion.div
+      initial={{
+        opacity: 0,
+        filter: 'blur(50px)',
+      }}
+      animate={{
+        opacity: 1,
+        filter: 'blur(0px)',
+        transition: {
+          duration: 0.9, // Entry duration
+          ease: 'anticipate',
+        },
+      }}
+      exit={{
+        opacity: 0,
+        filter: 'blur(20px)',
+        transition: {
+          duration: 0, // Exit duration
+          ease: 'easeInOut',
+        },
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
+
 
 const App = () => {
   const location = useLocation();
+  const [loading,setloading]=useState(true)
 
   // This effect scrolls the window to the top on every route change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+  useEffect(()=>{
+    const timer=setTimeout(()=>{
+      setloading(false)
+    },2000)
+
+    return()=>clearTimeout(timer)
+  },[])
+
   // Ensure you have framer-motion installed:
   // npm install framer-motion
 
   return (
     <div className='bg-[#020617] min-h-screen w-full'>
-      {/* <div className='absolute bg-black h-screen w-full flex items-center justify-center z-[999]'>
-        <img className='!h-20' src="https://i.pinimg.com/originals/14/74/69/1474691282a6e9d55344a4fa86097ca8.gif"></img>
-      </div> */}
-      <Mobilemenu />
-      {/* AnimatePresence handles the animation of components when they are mounted or unmounted */}
-      {/* 'mode="wait"' ensures the outgoing animation finishes before the new one starts */}
+      {loading ? <div className=' bg-gradient-to-br from-gray-900 via-black to-gray-900 gap-20 md:gap-50  h-screen w-full flex flex-col md:flex-row items-center justify-center ]'>
+        <div className='font-[font2] text-white text-xs tracking-widest'>DESIGNER</div>
+        <div className='w-25 h-60 border rounded-full py-5 border-gray-800 flex flex-col justify-between items-center'>
+         
+          <GiFlowerEmblem className='text-lime-400/90 spin' />
+          <div className='text-lime-400 font-[ad] text-8xl'>Ad</div>
+           <GiFlowerEmblem className='text-lime-400/90 spin' />
+            
+        </div>
+        <div className='font-[font2] text-white tracking-widest text-xs'>DEVELOPER</div>
+        
+        
+       
+      </div> :<><Mobilemenu />
+     
       <AnimatePresence mode="wait">
-        {/* We pass location and a unique key to Routes to let AnimatePresence know when the page changes */}
+        
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<AnimatedPage><Homefinal /></AnimatedPage>} />
+          <Route path="/" element={<AnimatedPage2><Homefinal /></AnimatedPage2>} />
           <Route path="/about" element={<AnimatedPage><About2 /></AnimatedPage>} />
           <Route path="/projects" element={<AnimatedPage><Projects /></AnimatedPage>} />
           <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
         </Routes>
-      </AnimatePresence>
+      </AnimatePresence></>}
+      
     </div>
   );
 };

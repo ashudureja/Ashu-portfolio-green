@@ -62,7 +62,7 @@ export const Example = () => {
 
 const ClipPathLinks = () => {
   return (
-    <div className="divide-y divide-white/20 border border-white/20">
+    <div className="divide-y divide-white/10 border border-white/10 bg-gradient-to-br from-gray-900 via-black/30 to-gray-900">
       {/* Mobile: Single column layout */}
       <div className="block md:hidden">
         <div className="grid grid-cols-1 divide-y divide-white/20">
@@ -81,13 +81,13 @@ const ClipPathLinks = () => {
       {/* Desktop: Original grid layout */}
       <div className="hidden md:block">
         {/* Row 1 */}
-        <div className="grid grid-cols-2 divide-x divide-white/20 border border-white/20">
+        <div className="grid grid-cols-2 divide-x divide-white/10 border border-white/10">
           <LinkBox Icon={SiReact} href="#" />
           <LinkBox Icon={SiJavascript} href="#" />
         </div>
 
         {/* Row 2 */}
-        <div className="grid grid-cols-4 divide-x divide-white/20 border border-white/20">
+        <div className="grid grid-cols-4 divide-x divide-white/10 border border-white/10">
           <LinkBox Icon={SiTypescript} href="#" />
           <LinkBox Icon={SiNextdotjs} href="#" />
           <LinkBox Icon={SiTailwindcss} href="#" />
@@ -95,7 +95,7 @@ const ClipPathLinks = () => {
         </div>
 
         {/* Row 3 */}
-        <div className="grid grid-cols-3 divide-x divide-white/20">
+        <div className="grid grid-cols-3 divide-x divide-white/10">
           <LinkBox Icon={SiRedux} href="#" />
           <LinkBox Icon={SiVite} href="#" />
           <LinkBox Icon={SiHtml5} href="#" />
