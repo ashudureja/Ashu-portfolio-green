@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 
@@ -66,49 +66,31 @@ const AnimatedPage = ({ children }) => {
   );
 };
 
-const Loader = () => {
-  return (
-    <div className="fixed inset-0 bg-[#020617] flex items-center justify-center z-[9999]">
-      <motion.div
-        className="w-12 h-12 border-4 border-[#9ae600] border-t-transparent rounded-full"
-        animate={{ rotate: 360 }}
-        transition={{ repeat: Infinity, duration: 1, ease: "linear" }}
-      />
-    </div>
-  );
-};
 
 const App = () => {
-
   const location = useLocation();
-
- 
-
-
-  
+z
+  // This effect scrolls the window to the top on every route change
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
-
+  // Ensure you have framer-motion installed:
+  // npm install framer-motion
 
   return (
-    <div className='bg-[#020617] min-h-screen w-full relative'>
-     
-     
+    <div className='bg-[#020617] min-h-screen'>
       <Mobilemenu />
       {/* AnimatePresence handles the animation of components when they are mounted or unmounted */}
       {/* 'mode="wait"' ensures the outgoing animation finishes before the new one starts */}
       <AnimatePresence mode="wait">
         {/* We pass location and a unique key to Routes to let AnimatePresence know when the page changes */}
-       
-         <Routes location={location} key={location.pathname}>
+        <Routes location={location} key={location.pathname}>
           <Route path="/" element={<AnimatedPage><Homefinal /></AnimatedPage>} />
           <Route path="/about" element={<AnimatedPage><About2 /></AnimatedPage>} />
           <Route path="/projects" element={<AnimatedPage><Projects /></AnimatedPage>} />
           <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
         </Routes>
-     
       </AnimatePresence>
     </div>
   );
