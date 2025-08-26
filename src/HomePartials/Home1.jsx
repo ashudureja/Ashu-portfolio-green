@@ -4,7 +4,7 @@ import Copy from "../Components/Copy";
 import AnimatedText from "../Components/AnimatedText";
 const Home1 = () => {
   return (
-    <div className="h-screen md:h-[130vw] lg:h-[111vh] w-full bg-lime-400 px-5 flex flex-col gap-8 md:gap-10 lg:gap-6 items-center overflow-hidden">
+    <div className="h-screen max-w-8xl mx-auto md:h-[130vw] lg:h-[111vh] w-full bg-lime-400 px-5 flex flex-col gap-8 md:gap-10 lg:gap-6 items-center overflow-hidden">
       <div className="relative mt-0 sm:mt-3 md:mt-6 ">
         {/* <div className=" flex absolute top-6 gap-2 left-1/2 -translate-x-1/2 sm:left-0 sm:-translate-x-0">
           <div className="h-5 w-5 bg-black rounded-full"></div>

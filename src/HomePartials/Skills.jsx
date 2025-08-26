@@ -34,7 +34,7 @@ const tags = ['REACT', 'JAVASCRIPT', 'TAILWIND CSS'];
 
 export const Example = () => {
   return (
-    <div className="bg-[#020617] mt-5 p-4 md:p-12">
+    <div className="bg-[#020617] max-w-8xl mx-auto mt-5 p-4 md:p-12">
       <div className="sm:mb-12 mb-9">
         <div className="flex flex-col md:flex-row justify-between md:items-center gap-4">
           <h1 className="text-[18vw] text-white uppercase text-center sm:text-left xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl leading-tight">

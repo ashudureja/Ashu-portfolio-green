@@ -12,7 +12,7 @@ const Contact = () => {
     <ReactLenis root>
       <div className="">
         {/* Contact Hero Section */}
-        <section className="p-4 md:px-8 relative w-full bg-[#020617] flex flex-col items-center gap-7 md:gap-16">
+        <section className="p-4 md:px-8 max-w-9xl mx-auto relative w-full bg-[#020617] flex flex-col items-center gap-7 md:gap-16">
           <div className="overflow-hidden w-full">
             <h1 className=" text-[24.3vw] text-lime-400 text-center w-full sm:text-[17vw] md:text-[20vw] leading-[0.85] font-light tracking-tight ">
               Get in touch

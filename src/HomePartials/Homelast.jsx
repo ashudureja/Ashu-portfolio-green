@@ -13,7 +13,7 @@ const StarIcon = () => (
 // Main component for the section
 const Homelast = () => {
   return (
-    <div className="bg-[#020617]  w-full font-sans flex flex-col p-4 md:p-6 lg:p-8 mt-10">
+    <div className="bg-[#020617] max-w-8xl mx-auto w-full font-sans flex flex-col p-4 md:p-6 lg:p-8 mt-10">
 
       {/* Main content card with lime green background */}
       <div className="bg-lime-400 text-black rounded-2xl p-10 md:p-16 lg:p-20 flex flex-col gap-4 items-center text-center">

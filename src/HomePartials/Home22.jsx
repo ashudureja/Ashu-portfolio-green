@@ -60,8 +60,8 @@ export default function ServicesSection() {
   };
 
   return (
-    <div className="bg-[#020617] text-white min-h-screen p-4 sm:p-8 md:p-12 mt-2">
-      <div className="max-w-7xl mx-auto">
+    <div className="bg-[#020617] max-w-8xl mx-auto text-white min-h-screen p-4 sm:p-8 md:p-12 mt-2">
+      <div className="">
         
         {/* Header Section */}
         <div className="mb-12 md:mb-20">

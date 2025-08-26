@@ -89,9 +89,9 @@ const About2 = () => {
   return (
     <ReactLenis root>
       {" "}
-      <div ref={container} className=" bg-[#020617]">
+      <div ref={container} className=" bg-[#020617  overflow-hidden">
         {/* heading */}
-        <section className="w-screen   flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
+        <section className="w-screen max-w-8xl mx-auto   flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
           <div className="overflow-hidden w-full h-full">
             {" "}
             <h1 className="text-[30vw] hidden md:block sm:!text-[22vw] mt-5  md:mt-4 lg:mt-0 leading-none ">
@@ -103,7 +103,7 @@ const About2 = () => {
           </div>
         </section>
         {/*  about*/}
-        <section className=" p-6 lg:pl-10 bg-[#020617] text-[#f9f4eb]  w-full">
+        <section className=" p-6 lg:pl-10 max-w-8xl mx-auto bg-[#020617] text-[#f9f4eb]  w-full">
           <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
             <div className="bg-red-100 overflow-hidden h-full">
               <ParallaxImage src="/ashu2.jpg"></ParallaxImage>
@@ -169,7 +169,7 @@ const About2 = () => {
 
         {/* skills*/}
 
-        <section className="min-h-screen mt-4 sm:mt-2 md:mt-0 p-6 md:p-12 w-full bg-[#020617] text-white font-sans">
+        <section className="min-h-screen mt-4 max-w-8xl mx-auto sm:mt-2 md:mt-0 p-6 md:p-12 w-full bg-[#020617] text-white font-sans">
           {/* Education Section */}
           <div className="mb-12 md:mb-24">
             <div className="flex flex-row items-end justify-between mb-6 md:mb-8">

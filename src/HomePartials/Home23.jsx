@@ -4,7 +4,7 @@ import ParallaxImage from '../Components/ParallaxImage'
 
 const Home23 = () => {
   return (
-   <div>
+   <div className='max-w-8xl mx-auto'>
      <div className="h-screen w-full bg-[#020617] p-4 lg:p-12 hidden lg:block">
       <div className="w-full h-full bg-[#020618] border backdrop-blur-3xl border-white/20 flex items-center justify-center px-4">
         <div className="text-[2rem] sm:text-7xl md:text-8xl text-white leading-[1] font-[font2] text-center">

@@ -85,14 +85,14 @@ const App = () => {
       {/* 'mode="wait"' ensures the outgoing animation finishes before the new one starts */}
       <AnimatePresence mode="wait">
         {/* We pass location and a unique key to Routes to let AnimatePresence know when the page changes */}
-       <div className='max-w-9xl mx-auto overflow-hidden'>
+       
          <Routes location={location} key={location.pathname}>
           <Route path="/" element={<AnimatedPage><Homefinal /></AnimatedPage>} />
           <Route path="/about" element={<AnimatedPage><About2 /></AnimatedPage>} />
           <Route path="/projects" element={<AnimatedPage><Projects /></AnimatedPage>} />
           <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
         </Routes>
-       </div>
+     
       </AnimatePresence>
     </div>
   );

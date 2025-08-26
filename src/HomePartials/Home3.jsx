@@ -52,9 +52,9 @@ const BestProject = () => {
   );
 
   return (
-    <div className="bg-[#020617] text-white font-sans p-4 sm:p-6 md:p-8 lg:p-12 mt-5 sm:mt-0">
+    <div className="bg-[#020617] max-w-8xl mx-auto text-white font-sans p-4 sm:p-6 md:p-8 lg:p-12 mt-5 sm:mt-0">
       {/* ======================= Header Section ======================= */}
-      <div className="mb-8 sm:mb-10 md:mb-12">
+      <div className="mb-8 sm:mb-10 md:mb-12 ">
         <div className="flex flex-col gap-4 sm:gap-6">
           {/* Title */}
           <h1 className="text-7xl text-center sm:text-left xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-[font1] leading-tight">

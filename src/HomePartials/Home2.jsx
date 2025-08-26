@@ -12,7 +12,7 @@ const Home2 = () => {
   const doubledItems = [...items, ...items];
 
   return (
-    <section className="flex items-center overflow-hidden h-12 lg:h-18 
+    <section className="max-w-8xl mx-auto flex items-center overflow-hidden h-12 lg:h-18 
       [mask-image:linear-gradient(to_right,transparent_0%,black_12.5%,black_87.5%,transparent_100%)]
       [-webkit-mask-image:linear-gradient(to_right,transparent_0%,black_12.5%,black_87.5%,transparent_100%)]">
       <ul className="flex gap-3 lg:gap-6 animate-marquee">

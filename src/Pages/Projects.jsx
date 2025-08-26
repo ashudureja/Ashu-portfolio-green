@@ -146,13 +146,13 @@ const Updates = () => {
     <ReactLenis root>
       <div className="">
         {/* Updates Hero Section */}
-        <section className="w-screen p-4 md:p-4 flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
+        <section className="w-screen max-w-8xl mx-auto p-4 md:p-4 flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
            <div className="overflow-hidden w-full h-full"> <h1 className="text-[26vw]  sm:!text-[22vw] leading-none ">Projects</h1></div>
           
         </section>
 
         {/* ArticlesSection */}
-        <section className="w-full flex justify-center items-center bg-black text-white ">
+        <section className="w-full flex max-w-8xl mx-auto justify-center items-center bg-black text-white ">
           {/* Responsive Grid Container */}
           <div className="grid grid-cols-1 md:grid-cols-2  max-w-8xl ">
             {articles.map((article) => (
