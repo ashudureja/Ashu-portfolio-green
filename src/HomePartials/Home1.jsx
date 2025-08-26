@@ -37,7 +37,7 @@ const Home1 = () => {
           <div className="absolute -inset-2 border border-black/30"></div>
           <img
             className="h-full w-full relative !object-cover  "
-            src="./bb4.JPG"
+            src="./bb4.webp"
             
           ></img>
           <div

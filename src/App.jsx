@@ -79,14 +79,10 @@ const Loader = () => {
 };
 
 const App = () => {
-  const [loading,setLoading]=useState(true)
+
   const location = useLocation();
 
-  useEffect(()=>{
-    const timer=setTimeout(()=>{
-      setLoading(false)
-    },2000)
-  },[])
+ 
 
 
   
@@ -98,8 +94,8 @@ const App = () => {
 
   return (
     <div className='bg-[#020617] min-h-screen w-full relative'>
-     {loading &&  <div className='bg-black h-screen w-screen top-0 left-0 absolute z-[999] flex items-center justify-center'>
-      <img className='!h-10' src="./motif.gif"></img></div>}
+     
+     
       <Mobilemenu />
       {/* AnimatePresence handles the animation of components when they are mounted or unmounted */}
       {/* 'mode="wait"' ensures the outgoing animation finishes before the new one starts */}
