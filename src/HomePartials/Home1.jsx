@@ -2,13 +2,16 @@ import React from "react";
 import { MdOutlineArrowOutward } from "react-icons/md";
 import Copy from "../Components/Copy";
 import AnimatedText from "../Components/AnimatedText";
+import { GiFlowerEmblem } from "react-icons/gi";
 const Home1 = () => {
   return (
     <div className="h-screen max-w-8xl mx-auto md:h-[130vw] lg:h-[111vh] w-full bg-lime-400 px-5 flex flex-col gap-8 md:gap-10 lg:gap-6 items-center overflow-hidden">
       <div className="relative mt-0 sm:mt-3 md:mt-6 ">
-        {/* <div className=" flex absolute top-6 gap-2 left-1/2 -translate-x-1/2 sm:left-0 sm:-translate-x-0">
-          <div className="h-5 w-5 bg-black rounded-full"></div>
-          <div className="h-5 w-5 bg-black rounded-full"></div>
+        {/* <div className=" flex absolute top-6 gap-1 left-1/2 -translate-x-1/2  md:left-0 md:-translate-x-0">
+           <GiFlowerEmblem className='text-black spin' />
+           <GiFlowerEmblem className='text-black spin' />
+           <GiFlowerEmblem className='text-black spin' />
+          
         </div> */}
         <div className="overflow-hidden text-center font-medium sm:mt-0  ">
           <h1 className="text-[24.5vw] sm:!text-[16vw] lg:!text-[16.5vw] mt-10 md:mt-4 lg:mt-0 !leading-[0.9] ">

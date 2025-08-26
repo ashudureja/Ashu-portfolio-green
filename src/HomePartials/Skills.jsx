@@ -62,10 +62,10 @@ export const Example = () => {
 
 const ClipPathLinks = () => {
   return (
-    <div className="divide-y divide-white/10 border border-white/10 bg-gradient-to-br from-gray-900 via-black/30 to-gray-900">
+    <div className="divide-y divide-white/10 border border-white/10 bg-gradient-to-br from-gray-900 md:via-black/40 via-black/50 to-gray-900">
       {/* Mobile: Single column layout */}
       <div className="block md:hidden">
-        <div className="grid grid-cols-1 divide-y divide-white/20">
+        <div className="grid grid-cols-1 divide-y divide-white/10">
           <LinkBox Icon={SiReact} href="#" />
           <LinkBox Icon={SiJavascript} href="#" />
           <LinkBox Icon={SiTypescript} href="#" />
