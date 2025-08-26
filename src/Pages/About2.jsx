@@ -105,7 +105,7 @@ const About2 = () => {
         {/*  about*/}
         <section className=" p-6 lg:pl-10 max-w-8xl mx-auto bg-[#020617] text-[#f9f4eb]  w-full">
           <div className="grid gap-5 grid-cols-1 md:grid-cols-2">
-            <div className="bg-red-100 overflow-hidden h-full">
+            <div className="bg-white/10 backdrop-blur-2xl overflow-hidden h-full w-full ">
               <ParallaxImage src="/ashu2.webp"></ParallaxImage>
             </div>
             <div className="flex flex-col justify-between">
@@ -171,7 +171,7 @@ const About2 = () => {
 
         <section className="min-h-screen mt-4 max-w-8xl mx-auto sm:mt-2 md:mt-0 p-6 md:p-12 w-full bg-[#020617] text-white font-sans">
           {/* Education Section */}
-          <div className="mb-12 md:mb-24">
+          <div className="mb-12 ">
             <div className="flex flex-row items-end justify-between mb-6 md:mb-8">
               <div className="overflow-hidden w-full h-full">
                 {" "}
