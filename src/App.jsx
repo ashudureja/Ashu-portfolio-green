@@ -79,7 +79,10 @@ const App = () => {
   // npm install framer-motion
 
   return (
-    <div className='bg-[#020617] min-h-screen'>
+    <div className='bg-[#020617] min-h-screen w-full'>
+      {/* <div className='absolute bg-black h-screen w-full flex items-center justify-center z-[999]'>
+        <img className='!h-20' src="https://i.pinimg.com/originals/14/74/69/1474691282a6e9d55344a4fa86097ca8.gif"></img>
+      </div> */}
       <Mobilemenu />
       {/* AnimatePresence handles the animation of components when they are mounted or unmounted */}
       {/* 'mode="wait"' ensures the outgoing animation finishes before the new one starts */}

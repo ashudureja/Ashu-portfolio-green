@@ -22,7 +22,7 @@ const Contact = () => {
           <div className=" w-full max-w-7xl mx-auto flex flex-col-reverse lg:flex-row gap-12 lg:gap-16">
             <div className=" flex-1 flex flex-col gap-10">
               {/* Intro Message Card */}
-              <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 p-8 lg:p-10 text-lime-400 border border-lime-400/30 backdrop-blur-sm transition-all duration-500 hover:border-lime-400/20 hover:shadow-2xl hover:shadow-lime-400/5">
+              <div className="bg-gradient-to-br from-gray-900 via-black to-gray-900 p-8 lg:p-10 text-lime-400 border border-lime-400/20 backdrop-blur-sm transition-all duration-500 hover:border-lime-400/20 hover:shadow-2xl hover:shadow-lime-400/5">
                 <h3 className="text-center lg:text-left !text-[7vw] md:!text-[5.2vw] lg:!text-[4vw] mb-6 leading-tight tracking-wide">
                   Let's Build Something Great Together.
                 </h3>
