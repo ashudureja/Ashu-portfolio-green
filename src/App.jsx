@@ -8,8 +8,64 @@ import About2 from './Pages/About2';
 import Contact from './Pages/contact/Contact';
 import Homefinal from './Homefinal';
 import Mobilemenu from './Components/Mobilemenu';
+import HomeFinal2 from './HomePartial2/HomeFinal2';
 
-// ---------- Loader Component ----------
+// Define the animation variants for the page transition
+const pageVariants = {
+  initial: {
+    opacity: 0,
+    filter: 'blur(44px)', // Start with a blur
+  },
+  in: {
+    opacity: 1,
+    filter: 'blur(0px)', // Animate to no blur
+  },
+  out: {
+    opacity: 0,
+    filter: 'blur(20px)', // Animate back to blur on exit
+  },
+};
+
+// Define the transition properties
+const pageTransition = {
+  type: 'tween',
+  ease: 'anticipate', // An easing function that gives a nice effect
+  duration: 0.8,
+};
+
+/**
+ * A simple wrapper component to apply the motion effects to each page.
+ * This makes the Routes definition cleaner.
+ */
+const AnimatedPage = ({ children }) => {
+  return (
+    <motion.div
+      initial={{
+        opacity: 0,
+        filter: 'blur(44px)',
+      }}
+      animate={{
+        opacity: 1,
+        filter: 'blur(0px)',
+        transition: {
+          duration: 1.2, // Entry duration
+          ease: 'anticipate',
+        },
+      }}
+      exit={{
+        opacity: 0,
+        filter: 'blur(20px)',
+        transition: {
+          duration: 0, // Exit duration
+          ease: 'easeInOut',
+        },
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
+
 const Loader = () => {
   return (
     <div className="fixed inset-0 bg-[#020617] flex items-center justify-center z-[9999]">
@@ -22,62 +78,42 @@ const Loader = () => {
   );
 };
 
-// ---------- Page Transition Wrapper ----------
-const AnimatedPage = ({ children }) => {
-  return (
-    <motion.div
-      initial={{ opacity: 0, filter: 'blur(44px)' }}
-      animate={{ opacity: 1, filter: 'blur(0px)', transition: { duration: 1.2, ease: 'anticipate' } }}
-      exit={{ opacity: 0, filter: 'blur(20px)', transition: { duration: 0.6, ease: 'easeInOut' } }}
-    >
-      {children}
-    </motion.div>
-  );
-};
-
 const App = () => {
+  const [loading,setLoading]=useState(true)
   const location = useLocation();
-  const [loading, setLoading] = useState(true);
 
-  // Preload fonts and images
-  useEffect(() => {
-    const loadFonts = document.fonts.ready; // Wait for fonts
-    const loadImages = Promise.all(
-      Array.from(document.images).map(
-        (img) =>
-          new Promise((resolve) => {
-            if (img.complete) resolve();
-            else img.onload = img.onerror = resolve;
-          })
-      )
-    );
+  useEffect(()=>{
+    const timer=setTimeout(()=>{
+      setLoading(false)
+    },2000)
+  },[])
 
-    Promise.all([loadFonts, loadImages]).then(() => {
-      setTimeout(() => setLoading(false), 800); // Small delay for smoother experience
-    });
-  }, []);
 
-  // Reset scroll on route change
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
+
+
   return (
-    <div className="bg-[#020617] min-h-screen relative">
-      {loading && <Loader />}
-      {!loading && (
-        <>
-          <Mobilemenu />
-          <AnimatePresence mode="wait">
-            <Routes location={location} key={location.pathname}>
-              <Route path="/" element={<AnimatedPage><Homefinal /></AnimatedPage>} />
-              <Route path="/about" element={<AnimatedPage><About2 /></AnimatedPage>} />
-              <Route path="/projects" element={<AnimatedPage><Projects /></AnimatedPage>} />
-              <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
-            </Routes>
-          </AnimatePresence>
-        </>
-      )}
+    <div className='bg-[#020617] min-h-screen w-full relative'>
+     {loading &&  <div className='bg-black h-screen w-screen top-0 left-0 absolute z-[999] flex items-center justify-center'>
+      <img className='!h-10' src="./motif.gif"></img></div>}
+      <Mobilemenu />
+      {/* AnimatePresence handles the animation of components when they are mounted or unmounted */}
+      {/* 'mode="wait"' ensures the outgoing animation finishes before the new one starts */}
+      <AnimatePresence mode="wait">
+        {/* We pass location and a unique key to Routes to let AnimatePresence know when the page changes */}
+       
+         <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<AnimatedPage><Homefinal /></AnimatedPage>} />
+          <Route path="/about" element={<AnimatedPage><About2 /></AnimatedPage>} />
+          <Route path="/projects" element={<AnimatedPage><Projects /></AnimatedPage>} />
+          <Route path="/contact" element={<AnimatedPage><Contact /></AnimatedPage>} />
+        </Routes>
+     
+      </AnimatePresence>
     </div>
   );
 };
