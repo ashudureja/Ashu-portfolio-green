@@ -152,8 +152,8 @@ const Updates = () => {
   return (
     <ReactLenis root>
       <div className="">
-        {/* Updates Hero Section */}
-        <section className="w-screen max-w-8xl mx-auto p-4 md:p-4 flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
+      
+        <section className="w-screen max-w-8xl mx-auto p-4 md:p-6 md:-mt-10 flex justify-center items-center bg-[#020617] text-lime-400 text-center px-4">
            <div className="overflow-hidden w-full h-full"> <h1 className="text-[26vw]  sm:!text-[22vw] leading-none ">Projects</h1></div>
           
         </section>
